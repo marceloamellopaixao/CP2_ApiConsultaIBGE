@@ -104,7 +104,7 @@ public class ConsultaIBGETest {
         assert !resposta.isEmpty();
 
         // Verifica se o status code é 200 (OK)
-        HttpURLConnection connection = (HttpURLConnection) new URL(ESTADOS_API_URL + id).openConnection();
+        HttpURLConnection connection = (HttpURLConnection) new URL(REGIOES_API_URL + id).openConnection();
         int statusCode = connection.getResponseCode();
         assertEquals(200, statusCode, "O status code da resposta da API deve ser 200 (OK)");
     }
